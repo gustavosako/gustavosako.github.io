@@ -4,3 +4,45 @@ body {
     font-family: "Segoe UI";
     line-height: 20px;
 }
+
+.jumbotron{
+    background-color: #333;
+}
+
+.container {
+    color: white;
+    width: 33.3333%;
+    display: inline-block;
+    background-color: #333;
+    text-align:center
+    
+}
+
+.link-button {
+    color: white;
+    background-color: #0066B8;
+    margin: 0.2rem;
+    height: 4.5rem;
+    display: inline-block;
+    width: 70%;
+    padding: 1%;
+}
+
+.other-button{
+    background-image: url('../images/down.png');
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #0066B8;
+    margin: 0.2rem;
+    height: 2.4rem;
+}
+
+.imagem{
+    background-image: url('../images/Fundo.png');
+    background-repeat: no-repeat;
+    padding-bottom: 68%;
+    background-size: 617px;
+    background-position: right;
+
+}
