@@ -42,8 +42,8 @@ body {
 .imagem{
     background-image: url('../images/Fundo.png');
     background-repeat: no-repeat;
-    padding-bottom: 68%;
-    background-size: 617px;
+    padding-bottom: 40%;
+    background-size: 917px;
     background-position: right;
 
 }
