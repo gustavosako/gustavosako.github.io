@@ -15,8 +15,21 @@ body {
     width: 33.3333%;
     display: inline-block;
     background-color: #333;
-    text-align:center
+    text-align:center;
+    padding: 1%;
     
+}
+
+.imagem{
+    width: 800px;
+    height: 800px;
+    background-image: url('../images/Fundo.png');
+    background-repeat: no-repeat;
+    background-size: 717px;
+    background-position: right;
+    display: inline-block;
+    padding: 1%;
+
 }
 
 .link-button {
@@ -34,19 +47,13 @@ body {
     background-size: 16px 16px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #0066B8;
+    background-color: #0066B8;   
+     display: inline-block;
     margin: 0.2rem;
     height: 2.4rem;
 }
 
-.imagem{
-    background-image: url('../images/Fundo.png');
-    background-repeat: no-repeat;
-    padding-bottom: 40%;
-    background-size: 917px;
-    background-position: right;
 
-}
 .navbar {
     position: fixed;
     right: 0;
