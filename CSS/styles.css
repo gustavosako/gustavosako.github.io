@@ -4,20 +4,34 @@ body {
     font-family: "Segoe UI";
     font-size: 16px;
     line-height: 20px;
+    background-color: #333;
 }
 
 .jumbotron{
-    background-color: #333;
+    
+    display: inline;
+}
+
+.jumbotron p {
+    font-weight: 300;
+}
+
+.jumbotron .imagem .screenshot {
+    padding-bottom: 68%;
 }
 
 .container {
     color: white;
     width: 33.3333%;
     display: inline-block;
-    background-color: #333;
     text-align:center;
     padding: 1%;
-    
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .container {
+        width: 100%;
+    }
 }
 
 .imagem{
@@ -25,11 +39,29 @@ body {
     height: 800px;
     background-image: url('../images/Fundo.png');
     background-repeat: no-repeat;
-    background-size: 717px;
     background-position: right;
-    display: inline-block;
-    padding: 1%;
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .imagem {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .imagem {
+        background-size: 617px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .imagem {
+        background-size: 750px;
+    }
 }
 
 .link-button {
@@ -40,7 +72,11 @@ body {
     display: inline-block;
     width: 70%;
     padding: 1%;
+    border: none;
+    font-size: 1.4rem;
 }
+
+
 
 .other-button{
     background-image: url('../images/down.png');
@@ -48,17 +84,37 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #0066B8;   
-     display: inline-block;
+    display: inline-block;
     margin: 0.2rem;
-    height: 2.4rem;
+    height: 4.5rem;
+    border: none;
+    width: 43px;
+    position: absolute;
 }
 
+.mainLinks {
+    background-color: #25252B;
+    border-radius: 8px;
+    padding: 8px 8px;
+}
+
+.mainLinks a {
+    text-decoration: none;
+    color: #0066B8;
+    
+}
+
+.wrap-together a {
+    text-decoration: none;
+    color: #0066B8;;
+}
+
+/* NAVIGATION BAR */
 
 .navbar {
     position: fixed;
     right: 0;
     left: 0;
-
     background-color: #2C2C32;
     height: 50px;
 }
@@ -75,9 +131,24 @@ body {
     }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navInput {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .linkWrapper {
         width: 1170px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+    .navBarLinks {
+        display: none;
+    }
+    .navBarButtons {
+        display: none;
     }
 }
 
@@ -132,8 +203,6 @@ body {
     opacity: 1;
 }
 
-
-
 .navBarLinks {
     float: left;
     padding-left: 12px;
@@ -157,6 +226,17 @@ body {
     padding: 6px 15px 6px 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .navInput input{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navInput input{
+         display: inline-block;
+}
+
 .navBarDownload {
     height: 50px;
     padding: 17px 20px;
@@ -164,3 +244,21 @@ body {
     background-color: #0066B8;
     color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+    .navBarDownload span{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navBarDownload span{
+         display: inline-block;
+}
+
+/*.updateBanner {
+    background-color: #25252B;
+    color: #CCC;
+    position: relative;
+    margin-top: 50px;
+}*/
