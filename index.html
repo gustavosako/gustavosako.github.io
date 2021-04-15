@@ -20,9 +20,9 @@
                     <li> <a href="">Learn</a> </li>
                 </div>
                 <div class="navBarButtons">
-                    <li class="navUsuario"> Nenhum usuario logado </li>
+                    <li class="navUsuario" id="nomeUsuario">  </li>
                     <li class="navBarLogin">
-                        <button id="loginDialog">Login</button>
+                        <button id="loginDialog" class="loginDialog">Login</button>
                         <div class="dialog">
                             <div>
                                 <label>Login</label>
@@ -36,6 +36,7 @@
                             </div>
                             <span id="error" class="errorMsg"></span>
                         </div>
+                        <button id="btnSair" class="sair" onclick="clearLS()">Sair</button>
                     </li>
                 </div>
             </ul> 

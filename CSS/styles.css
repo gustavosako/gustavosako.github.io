@@ -243,6 +243,22 @@ body {
     text-align: center;
 }
 
+.loginDialog {
+    display:inline-block;
+}
+
+.loginDialog.hide {
+    display: none;
+}
+
+.sair {
+    display: none
+}
+
+.sair.show {
+    display: inline-block;
+}
+
 @media screen and (min-width: 768px) {
     .navBarDownload span{
         display: none;
@@ -261,6 +277,8 @@ body {
     position: absolute;
     display: none;
     color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .dialog div input {
