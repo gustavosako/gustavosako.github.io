@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="./CSS/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <!-- navigation bar -->
@@ -21,13 +22,13 @@
                 <div class="navBarButtons">
                     <li class="navUsuario"> Nenhum usuario logado </li>
                     <li class="navBarLogin">
-                        <button id="loginBtn">Login</button>
+                        <button id="loginDialog">Login</button>
                         <div class="dialog">
-                            <div id="login">
+                            <div>
                                 <label>Login</label>
-                                <input type="text">
+                                <input type="text" id="inpLogin">
                                 <label>Senha</label>
-                                <input type="text">
+                                <input type="password" id="inpSenha">
                                 <div class="dialogButtons">
                                     <button id="loginBtn">Entrar</button>
                                     <button id="cadastroBtn">cadastrar Usuário</button>
