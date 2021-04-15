@@ -217,13 +217,9 @@ body {
     height: 50px;
 }
 
-.navInput input{
+.navUsuario {
     color: #fff;
-    background-color: #444;
-    width: 183px;
-    border: none;
-    height: 50px;
-    padding: 6px 15px 6px 40px;
+    padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -237,12 +233,14 @@ body {
          display: inline-block;
 }
 
-.navBarDownload {
+.navBarLogin button{
     height: 50px;
     padding: 17px 20px;
-    padding-left: 40px;
     background-color: #0066B8;
+    text-decoration: none;
+    border: none;
     color: #fff;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -254,6 +252,39 @@ body {
 @media screen and (min-width: 992px) {
     .navBarDownload span{
          display: inline-block;
+}
+
+.dialog {
+    background-color: #25252B;
+    padding: 10px;
+    width: 200px;
+    position: absolute;
+    display: none;
+    color: #fff;
+}
+
+.dialog div input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dialogButtons {
+    background-color: #0066B8;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    margin: 5px;
+    border: #25252B;
+    border-radius: 3px;
+}
+
+.dialog.show {
+    display: flex;
+}
+
+.errorMsg {
+    color: crimson;
 }
 
 /*.updateBanner {

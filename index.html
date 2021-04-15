@@ -19,11 +19,22 @@
                     <li> <a href="">Learn</a> </li>
                 </div>
                 <div class="navBarButtons">
-                    <li class="navInput">
-                        <input placeholder="Search Docs">
-                    </li>
-                    <li class="navBarDownload">
-                        <span>Download</span>
+                    <li class="navUsuario"> Nenhum usuario logado </li>
+                    <li class="navBarLogin">
+                        <button id="loginBtn">Login</button>
+                        <div class="dialog">
+                            <div id="login">
+                                <label>Login</label>
+                                <input type="text">
+                                <label>Senha</label>
+                                <input type="text">
+                                <div class="dialogButtons">
+                                    <button id="loginBtn">Entrar</button>
+                                    <button id="cadastroBtn">cadastrar Usuário</button>
+                                </div>
+                            </div>
+                            <span id="error" class="errorMsg"></span>
+                        </div>
                     </li>
                 </div>
             </ul> 
@@ -73,5 +84,6 @@
                 <div class="screenshot"></div>
             </div>
         </div>
+        <script src="scripts.js"></script>
     </body>
 </html>
