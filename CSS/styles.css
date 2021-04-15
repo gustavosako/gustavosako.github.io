@@ -280,11 +280,13 @@ body {
 }
 
 .dialog.show {
-    display: flex;
+    display: block;
 }
 
 .errorMsg {
     color: crimson;
+    font-size: 10px;
+    display: block;
 }
 
 /*.updateBanner {
