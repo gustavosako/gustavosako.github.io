@@ -7,4 +7,22 @@
 
  - https://api.n.exchange/en/api/v1/pair/
 
- Usar o site da api para pegar os nomes do pair.
+ - Login
+ * michael.lawson@reqres.in
+ * lindsay.ferguson@reqres.in
+ * tobias.funke@reqres.in
+ * george.edwards@reqres.in
+
+ - Codigo das criptomoedas
+
+ * BNTXVG
+ * BNTDASH
+ * BDGLTC
+ * BIXETH
+ * LTCBTC
+ * BTCLTC
+ * ETHXLM
+ * USDTLTC
+ * DOGEZEC
+ * USDTDASH
+ * BCHXVG
