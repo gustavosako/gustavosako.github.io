@@ -1,51 +1,53 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./CSS/styles.css">
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    </head>
-    <body>
-        <!-- navigation bar -->
-        <div class="navbar">
-            <ul class="linkWrapper">
-                <li class="navBarLogo">
-                    <a href=""> <span>Visual Studio Code</span> </a>
-                </li>
-                <div class="navBarLinks">
-                    <li> <a href="">Docs</a> </li>
-                    <li> <a href="">Updates</a> </li>
-                    <li> <a href="">Blog</a> </li>
-                    <li> <a href="">API</a> </li>
-                    <li> <a href="">Extensions</a> </li>                   
-                    <li> <a href="">FAQ</a> </li>                    
-                    <li> <a href="">Learn</a> </li>
-                </div>
-                <div class="navBarButtons">
-                    <li class="navUsuario" id="nomeUsuario">  </li>
-                    <li class="navBarLogin">
-                        <button id="loginDialog" class="loginDialog">Login</button>
-                        <div class="dialog">
-                            <div>
-                                <label>Login</label>
-                                <input type="text" id="inpLogin">
-                                <label>Senha</label>
-                                <input type="password" id="inpSenha">
-                                <div class="dialogButtons">
-                                    <button id="loginBtn">Entrar</button>
-                                    <button id="cadastroBtn">cadastrar Usuário</button>
-                                </div>
+
+<head>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <ul class="linkWrapper">
+            <li class="navBarLogo">
+                <a href=""> <span>Visual Studio Code</span> </a>
+            </li>
+            <div class="navBarLinks">
+                <li> <a href="">Docs</a> </li>
+                <li> <a href="">Updates</a> </li>
+                <li> <a href="">Blog</a> </li>
+                <li> <a href="">API</a> </li>
+                <li> <a href="">Extensions</a> </li>
+                <li> <a href="">FAQ</a> </li>
+                <li> <a href="">Learn</a> </li>
+            </div>
+            <div class="navBarButtons">
+                <li class="navUsuario" id="nomeUsuario"> </li>
+                <li class="navBarLogin">
+                    <button id="loginDialog" class="loginDialog">Login</button>
+                    <div class="dialog">
+                        <div>
+                            <label>Login</label>
+                            <input type="text" id="inpLogin">
+                            <label>Senha</label>
+                            <input type="password" id="inpSenha">
+                            <div class="dialogButtons">
+                                <button id="loginBtn">Entrar</button>
+                                <button id="cadastroBtn">cadastrar Usuário</button>
                             </div>
-                            <span id="error" class="errorMsg"></span>
                         </div>
-                        <button id="btnSair" class="sair" onclick="clearLS()">Sair</button>
-                    </li>
-                </div>
-            </ul> 
-        </div>
-        <!-- <div class="updateBanner">
+                        <span id="error" class="errorMsg"></span>
+                    </div>
+                    <button id="btnSair" class="sair" onclick="clearLS()">Sair</button>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <!-- <div class="updateBanner">
             <p class="updateMessage">Version 1.54 is now available! Read about the new features and fixes from February.</p>
         </div>  -->
-        <!-- corpo da página -->
-        <div role="main" id="main">
+    <!-- corpo da página -->
+    <div role="main" id="main">
         <div class="jumbotron">
             <div class="container">
                 <h1><br><br><br><br>
@@ -65,11 +67,11 @@
                         </button>
                         <button id="download-dropdown" title="Other platforms and Insiders Edition"
                             class="other-button"></button>
-                            <p class="mainLinks">
-                                <a href="/lat-downloads">Other plataforms</a>
-                                and
-                                <a href="/insiders">insiders edition</a>
-                            </p>                    
+                        <p class="mainLinks">
+                            <a href="/lat-downloads">Other plataforms</a>
+                            and
+                            <a href="/insiders">insiders edition</a>
+                        </p>
                         <p class="terms">
                             By using VS Code, you agree to its
                             <span class="wrap-together">
@@ -86,6 +88,22 @@
                 <div class="screenshot"></div>
             </div>
         </div>
-        <script src="scripts.js"></script>
-    </body>
+
+        <!-- teste dos dados -->
+        <div>
+            <br><br>
+            <FORM>
+                <label>Codigo da Criptomoeda:</label>
+                <input type="text" id="searchCode">
+                <button id="inpBuscar" type="button">Buscar</button> <br><br> <br><br>
+
+                Preço -><input type="text" class="from-control" id="price" readonly><br><br>
+                Maximo de compra -><input type="text" class="from-control" id="max_amount_base" readonly><br><br>
+                Minimo de compra -><input type="text" class="from-control" id="min_amount_base" readonly><br><br>
+            </FORM>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
 </html>
