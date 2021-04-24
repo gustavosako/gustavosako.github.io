@@ -8,7 +8,6 @@ body {
 }
 
 .jumbotron{
-    
     display: inline;
 }
 
@@ -34,15 +33,39 @@ body {
     }
 }
 
+.apiContainer {
+    display: flex;
+    float: right;
+}
+
 .imagem{
     width: 800px;
     height: 800px;
     background-image: url('../images/Fundo.png');
     background-repeat: no-repeat;
-    background-position: right;
     float: right;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: block;
+}
+
+.imagem.hide {
+    display: none;
+}
+
+.apiCripto {
+    color: #fff;
+    background-color: #25252B;
+    border-radius: 10px;
+    width: 500px;
+    padding: 10px;
+    display: none;
+    float: right;
+    margin: 100px;
+}
+
+.apiCripto.show{
+    display: block;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {

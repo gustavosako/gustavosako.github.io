@@ -3,21 +3,28 @@ window.addEventListener("load", buttonDialog);
 nome = document.getElementById('nomeUsuario');
 btnLogin = document.getElementById('loginDialog');
 btnSair = document.getElementById('btnSair');
+image = document.getElementById('image');
+api = document.getElementById('api');
 
 if (localStorage.getItem("Login") !== null) {
     nome.innerHTML = "Logado como " + localStorage.getItem("Login");
     btnLogin.className = 'loginDialog hide'
     btnSair.className = 'sair show'
+    image.className = 'imagem hide';
+    api.className = 'apiCripto show';
 } else {
     nome.innerHTML = "Nenhum usuario logado";
     btnLogin.className = 'loginDialog'
     btnSair.className = 'sair'
+    image.className = 'imagem';
+    api.className = 'apiCripto';
 }
 
 function clearLS() {
     localStorage.clear();
     location.reload();
 }
+
 
 //  MOSTRA/ESCONDE A JANELA DE USUÁRIO
 function buttonDialog() {
@@ -66,6 +73,7 @@ document.getElementById('loginBtn').addEventListener('click', function () {
             .then((Response) => {
                 console.log(Response);
                 localStorage.setItem("Login", login);
+                localStorage.setItem("Token", Response.data.token);
                 nome.innerHTML = "Logado como " + localStorage.getItem("Login");
                 location.reload();
             }, (error) => {
@@ -91,15 +99,22 @@ const showData = (result) => {
 
 document.getElementById('inpBuscar').addEventListener('click', function () {
     codigo = document.getElementById('searchCode').value;
-    const options = {
-        method: 'GET',
-        mode: 'cors',
-        cache: 'default'
+    errorMsg = document.getElementById('errorApi');
+    if (codigo.length<3) {
+        errorMsg.innerHTML = 'Os campos devem conter ao menos 3 caracteres.'
+    } else {
+        errorMsg.innerHTML = ''
+        const options = {
+            method: 'GET',
+            mode: 'cors',
+            cache: 'default'
+        }
+    
+        fetch(`https://api.n.exchange/en/api/v1/get_price/${codigo}/`, options)
+            .then(response => {
+                response.json().then(data => showData(data))
+            })
+            .catch(e => console.log('erro na busca'))
     }
-
-    fetch(`https://api.n.exchange/en/api/v1/get_price/${codigo}/`, options)
-        .then(response => {
-            response.json().then(data => showData(data))
-        })
-        .catch(e => console.log('erro na busca'))
+    
 });

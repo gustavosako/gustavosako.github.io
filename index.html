@@ -84,23 +84,24 @@
                     </div>
                 </div>
             </div>
-            <div class="imagem">
-                <div class="screenshot"></div>
+            <div class="apiContainer">
+                <div class="imagem" id="image">
+                    <div class="screenshot"></div>
+                </div>
+                <!-- teste dos dados -->
+                <div class="apiCripto" id="api">
+                    <br><br>
+                    <FORM>
+                        <label>Codigo da Criptomoeda:</label>
+                        <input type="text" id="searchCode">
+                        <button id="inpBuscar" type="button">Buscar</button> <br><br>
+                        Preço -><input type="text" class="from-control" id="price" readonly><br><br>
+                        Maximo de compra -><input type="text" class="from-control" id="max_amount_base" readonly><br><br>
+                        Minimo de compra -><input type="text" class="from-control" id="min_amount_base" readonly><br><br>
+                    </FORM>
+                    <span id="errorApi" class="errorMsg"></span>
+                </div>
             </div>
-        </div>
-
-        <!-- teste dos dados -->
-        <div>
-            <br><br>
-            <FORM>
-                <label>Codigo da Criptomoeda:</label>
-                <input type="text" id="searchCode">
-                <button id="inpBuscar" type="button">Buscar</button> <br><br> <br><br>
-
-                Preço -><input type="text" class="from-control" id="price" readonly><br><br>
-                Maximo de compra -><input type="text" class="from-control" id="max_amount_base" readonly><br><br>
-                Minimo de compra -><input type="text" class="from-control" id="min_amount_base" readonly><br><br>
-            </FORM>
         </div>
     </div>
     <script src="scripts.js"></script>
