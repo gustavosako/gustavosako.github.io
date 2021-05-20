@@ -33,6 +33,25 @@
                             <input type="password" id="inpSenha">
                             <div class="dialogButtons">
                                 <button id="loginBtn">Entrar</button>
+                            </div>
+                        </div>
+                        <span id="error" class="errorMsg"></span>
+                    </div>
+                    <button id="btnSair" class="sair" onclick="clearLS()">Sair</button>
+                </li>
+                <li class="navBarCadastro">
+                    <button id="CadastroDialog" class="CadastroDialog">Cadastro</button>
+                    <div class="dialog">
+                        <div>
+                            <label>Cadastro</label>
+                            <input type="text" id="inpCadastro">
+                            <label>Senha</label>
+                            <input type="password" id="inpSenha">
+                            <label>Primeiro Nome</label>
+                            <input type="firstname" id="inpFirstName">
+                            <label>Ultimmo nome</label>
+                            <input type="lastname" id="inpLastName">
+                            <div class="dialogButtons">
                                 <button id="cadastroBtn">cadastrar Usuário</button>
                             </div>
                         </div>
@@ -92,19 +111,16 @@
                 <div class="apiCripto" id="api">
                     <br><br>
                     <FORM>
-                        <label>Codigo da Criptomoeda:</label>
-                        <input type="text" id="searchCode">
-                        <button id="inpBuscar" type="button">Buscar</button> <br><br>
-                        Preço -><input type="text" class="from-control" id="price" readonly><br><br>
-                        Maximo de compra -><input type="text" class="from-control" id="max_amount_base" readonly><br><br>
-                        Minimo de compra -><input type="text" class="from-control" id="min_amount_base" readonly><br><br>
+                        <label>Em que está pensando?</label>
+                        <input type="text" id="publicar">
+                        <button id="inpPublicar" type="button">publicar</button> <br><br>
                     </FORM>
                     <span id="errorApi" class="errorMsg"></span>
                 </div>
             </div>
         </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
