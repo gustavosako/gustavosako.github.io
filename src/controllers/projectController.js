@@ -27,7 +27,7 @@ router.get('/:timelineId', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/post', async (req, res) => {
     try {
         const timeline = await Timeline.create({ ...req.body, user: req.userId });
 

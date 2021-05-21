@@ -69,54 +69,22 @@
     <div role="main" id="main">
         <div class="jumbotron">
             <div class="container">
-                <h1><br><br><br><br>
-                    Code editing.<br><br>
-                    <strong>Redefined.</strong>
-                </h1>
-                <div class="lead">
-                    <p>
-                        Free. built on open source. Runs everywhere.
-                    </p>
-                </div>
-                <div id="Download-button" class="download">
-                    <div class="primary-button">
-                        <button class="link-button">
-                            Download for windowns<br>
-                            <small class="build-type">Stable build</small>
-                        </button>
-                        <button id="download-dropdown" title="Other platforms and Insiders Edition"
-                            class="other-button"></button>
-                        <p class="mainLinks">
-                            <a href="/lat-downloads">Other plataforms</a>
-                            and
-                            <a href="/insiders">insiders edition</a>
-                        </p>
-                        <p class="terms">
-                            By using VS Code, you agree to its
-                            <span class="wrap-together">
-                                <a id="home-terms-link" href="#home-terms">
-                                    license and privacy statement
-                                </a>
-                                .
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="apiContainer">
-                <div class="imagem" id="image">
-                    <div class="screenshot"></div>
-                </div>
-                <!-- teste dos dados -->
-                <div class="apiCripto" id="api">
-                    <br><br>
-                    <FORM>
-                        <label>Em que está pensando?</label>
-                        <input type="text" id="publicar">
-                        <button id="inpPublicar" type="button">publicar</button> <br><br>
-                    </FORM>
-                    <span id="errorApi" class="errorMsg"></span>
-                </div>
+                <br><br>
+
+                <h1>Posts</h1>
+                <form action="post" method="post" accept-charset="utf-8">
+                    <label for="content">Conteudo: </label>
+                    <input type="text" name="content" value="">
+                    <input type="submit" value="Adicionar &rarr;">
+                </form>
+
+                <form action="post" method="get" accept-charset="utf-8">
+                    <label for="busca">Busca: </label>
+                    <input type="text" name="busca" value="">
+                    <input type="submit" value="busca...">
+                </form>
+
+
             </div>
         </div>
     </div>
