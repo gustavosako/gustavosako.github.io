@@ -270,9 +270,9 @@ body {
     display:inline-block;
 }
 
-.loginDialog.hide {
+/*.loginDialog.hide {
     display: none;
-}
+}*/
 
 .navBarCadastro button{
     height: 50px;

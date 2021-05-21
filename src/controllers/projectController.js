@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.use(authMiddleware);
 
-router.get('/', async (req, res) => {
+router.get('/buscar', async (req, res) => {
     try {
         const timeline = await Timeline.find().populate('user');
 
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/:timelineId', async (req, res) => {
+router.get('/buscar/:timelineId', async (req, res) => {
     try {
         const timeline = await Timeline.findById(req.params.timelineId).populate('user');
 
@@ -27,7 +27,7 @@ router.get('/:timelineId', async (req, res) => {
     }
 });
 
-router.post('/post', async (req, res) => {
+router.post('/criar', async (req, res) => {
     try {
         const timeline = await Timeline.create({ ...req.body, user: req.userId });
 

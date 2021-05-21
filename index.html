@@ -10,17 +10,8 @@
     <div class="navbar">
         <ul class="linkWrapper">
             <li class="navBarLogo">
-                <a href=""> <span>Visual Studio Code</span> </a>
+                <a href=""> <span>Rede social aleatória :]</span> </a>
             </li>
-            <div class="navBarLinks">
-                <li> <a href="">Docs</a> </li>
-                <li> <a href="">Updates</a> </li>
-                <li> <a href="">Blog</a> </li>
-                <li> <a href="">API</a> </li>
-                <li> <a href="">Extensions</a> </li>
-                <li> <a href="">FAQ</a> </li>
-                <li> <a href="">Learn</a> </li>
-            </div>
             <div class="navBarButtons">
                 <li class="navUsuario" id="nomeUsuario"> </li>
                 <li class="navBarLogin">
@@ -72,13 +63,13 @@
                 <br><br>
 
                 <h1>Posts</h1>
-                <form action="post" method="post" accept-charset="utf-8">
-                    <label for="content">Conteudo: </label>
-                    <input type="text" name="content" value="">
-                    <input type="submit" value="Adicionar &rarr;">
+                <form action="http://localhost:3000/timeline/criar" method="post" accept-charset="utf-8">
+                    <label for="content">No que você está pensando?</label><br>
+                    <input type="text" name="content" value=""><br>
+                    <input type="submit" value="Compartilhar &rarr;">
                 </form>
 
-                <form action="post" method="get" accept-charset="utf-8">
+                <form action="http://localhost:3000/timeline/buscar" method="get" accept-charset="utf-8">
                     <label for="busca">Busca: </label>
                     <input type="text" name="busca" value="">
                     <input type="submit" value="busca...">
